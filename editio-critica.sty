@@ -1,13 +1,9 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{editio-critica}
 %Aparientia documentis.
-\def\ps@plain{%
-   \def\@evenhead{}%
-   \def\@oddhead{}%
-   \def\@evenfoot{\thepage\hfil}%
-   \def\@oddfoot{\hfil\thepage}%
-}
-\pagestyle{plain}
+\RequirePackage{titleps}
+\newpagestyle{editio}{\setfoot[\thepage][][]{}{}{\thepage}}
+\pagestyle{editio}
 \RequirePackage{microtype}
 \setlength{\parindent}{0.6cm}
 \sloppy
