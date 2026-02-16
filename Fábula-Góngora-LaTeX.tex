@@ -1,53 +1,15 @@
-\documentclass[11pt,a4paper,twoside]{article}
-\usepackage[noeledsec,noend,noledgroup,nopenalties,series={A,E},parapparatus]{reledmac}
+\documentclass[11pt,twoside]{article}
 \usepackage{fontspec}
-\usepackage[paperwidth=17.00cm,paperheight=25.00cm,top=1.40cm,inner=1.95cm,outer=1.65cm,bottom=2.50cm]{geometry}
+\usepackage[paperwidth=17.00cm,paperheight=25.00cm,top=1.45cm,inner=1.95cm,outer=1.65cm,bottom=2.50cm]{geometry}
 \usepackage{polyglossia}
-\usepackage[breaklinks=true,hidelinks]{hyperref}
-\usepackage{xurl}
-\usepackage{microtype}
-\usepackage[style=nncph,backend=biber,url=true]{biblatex}
-\addbibresource{bibliography.bib}
+\usepackage{editio-critica}
 \title{\huge\textbf{FÁBULA DE POLIFEMO Y GALATEA}}
 \author{\huge\textsc{\textbf{Luis de Góngora}}}
 \date{\vspace{60pt}\textsc{Con variantes de la redacción primitiva}\\\fontsize{40}{11}\selectfont{\vfill\textbf{\LaTeX}}}
 %
 \setmainfont{TemporaNR}[RawFeature=lnum]
 \setdefaultlanguage{spanish}
-%
-\setlength{\parindent}{0.6cm}
-\setlength{\bibhang}{0.6cm}
-\sloppy
-%
-\fnpos{critical-familiar}
-\fnpos{{A}{familiar},{A}{critical},{E}{familiar}}
-\Xarrangement{paragraph}
-\arrangementX[A]{paragraph}
-\parindentX[E]
-\AtBeginDocument{\Xmaxhnotes{0.66\textheight}\maxhnotesX{1\textheight}}
-\Xafterlemmaseparator{0.4em}
-\Xbeforelemmaseparator{-0.1em}
-\Xafternumber{0.4em}
-\Xnotenumfont{\bfseries}
-\Xnumberonlyfirstinline
-\Xnonbreakableafternumber
-\Xinplaceoflemmaseparator{0em}
-\newcommand{\comillas}[1]{«#1»}
-\renewcommand{\thefootnoteA}{}
-%
-\prenotesX{11pt}
-\afterruleX{2pt}
-\Xprenotes{11pt}
-\Xafterrule{2pt}
-\linenummargin{outer}
-%
-\usepackage{tocloft}
-\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
-\renewcommand{\cfttoctitlefont}{\bfseries\scshape}
-%Espaciado de la lista.
-\usepackage{enumitem}
-\setlist{nosep,noitemsep,parsep=0pt}
-%
+%CONSPECTVS SIGLORVM.
 \newcommand{\ch}{\emph{\textsc{\textbf{Ch}}}}
 \newcommand{\guno}{\emph{\textbf{G1}}}
 \newcommand{\lvi}{\emph{\textsc{\textbf{LVi}}}}
@@ -76,7 +38,7 @@
 %
 {\ch} = \emph{\textsc{Obras de D. Lvis de Gongora}} (BNE, RES/45).
 %
-Manuscrito en papel con los textos de Góngora; 26x18cm.; 3 vols.; copiado por Antonio Chacón y supervisadas por el autor, según así lo expresa Chacón en la portada con el texto «Reconocidas i comunicadas con el \textsc{por d. antonio chacon ponce} de Leon»; dedicado a don Gaspar de Guzmán, con la rúbrica «\textsc{al exc.mo señor d. gaspar de gvzman conde de olivares, dvqve de sanlvcar}», fechado en «diziembre 12 de [1]628»; las págs. 121-137 del vol. I contienen el \emph{Polifemo}. <\url{https://bdh-rd.bne.es/viewer.vm?id=0000015414&page=1}>\par
+Manuscrito en papel con los textos de Góngora; 26x18cm.; 3 vols.; copiado por Antonio Chacón y supervisadas por el autor, según así lo expresa Chacón en la portada con el texto «Reconocidas i comunicadas con el \textsc{por d. antonio chacon ponce} de Leon»; dedicado a don Gaspar de Guzmán, con la rúbrica «\textsc{al exc.mo señor d. gaspar de gvzman conde de olivares, dvqve de sanlvcar}», fechado en «diziembre 12 de 628»; las págs. 121-137 del vol. 1 contienen el \emph{Polifemo}. <\url{https://bdh-rd.bne.es/viewer.vm?id=0000015414&page=1}>.\par
 %
 {\lvi} = \emph{\textsc{Obras en verso del Homero español}} \emph{que recogio Iuan Lopez de Vicuña}.
 %
@@ -84,7 +46,7 @@ Edición impresa; editio princeps de las obras poéticas de Góngora (?); fecha 
 %
 {\guno} = \emph{Obras de Luis de Góngora} (BNE, MSS/22217).
 %
-Manuscrito en papel con las obras de Góngora; 248 fols.; 21x15cm.; entre 1601 y 1700?; pertenece a la redacción primitiva del texto, que Góngora modificó --probablemente-- por influencia de su amigo Pedro de Valencia, quien analizó su obra en una carta fechada el 30 de junio 1613\footnoteE{Se conservaron dos redacciones autógrafas de esta carta; una, la más antigua, en el MSS/5585 (165r-168v); la segunda \parencite{PérezLópez1988}, en el MSS/3906 (ff. 64r-67r), que tiene su copia en el MSS/19004 (ff. 13r-20r), que apenas modifica las grafías, como la conjunción copulativa escrita con \emph{i} en el autógrafo, cuya copia redacta con \emph{y}. Todos los manuscritos yacen guardados en la Biblioteca Nacional de España. Allí, en esa carta, redacta Pedro de Valencia su crítica a las recientes \emph{Soledades} y \emph{Fábula de Polifemo y Galatea}.}; los ff. 2r-16v contienen el \emph{Polifemo}. <\url{https://bdh-rd.bne.es/viewer.vm?id=0000012206&page=1}>\par
+Manuscrito en papel con las obras de Góngora; 248 fols.; 21x15cm.; entre 1601 y 1700?; pertenece a la redacción primitiva del texto, que Góngora modificó --probablemente-- por influencia de su amigo Pedro de Valencia, quien analizó su obra en una carta fechada el 30 de junio 1613\footnoteE{Se conservaron dos redacciones autógrafas de esta carta; una, la más antigua, en el MSS/5585 (165r-168v); la segunda \parencite{PérezLópez1988}, en el MSS/3906 (ff. 64r-67r), que tiene su copia en el MSS/19004 (ff. 13r-20r), que apenas modifica las grafías, como la conjunción copulativa escrita con \emph{i} en el autógrafo, cuya copia redacta con \emph{y}. Todos los manuscritos yacen guardados en la Biblioteca Nacional de España. Allí, en esa carta, redacta Pedro de Valencia su crítica a las recientes \emph{Soledades} y \emph{Fábula de Polifemo y Galatea}.}; los ff. 2r-16v contienen el \emph{Polifemo}. <\url{https://bdh-rd.bne.es/viewer.vm?id=0000012206&page=1}>.\par
 %
 \section*{\textsc{Criterios de edición}}
 \addcontentsline{toc}{section}{\textsc{Criterios de edición}}
