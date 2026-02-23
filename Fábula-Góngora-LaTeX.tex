@@ -1,6 +1,6 @@
 \documentclass[11pt,twoside]{article}
 \usepackage{fontspec}
-\usepackage[paperwidth=17.00cm,paperheight=25.00cm,top=1.45cm,inner=1.95cm,outer=1.65cm,bottom=2.50cm]{geometry}
+\usepackage[paperwidth=17.00cm,paperheight=25.00cm,top=1.40cm,inner=1.95cm,outer=1.60cm,bottom=2.50cm]{geometry}
 \usepackage{polyglossia}
 \usepackage{editio-critica}
 \title{\huge\textbf{FÁBULA DE POLIFEMO Y GALATEA}}
@@ -13,6 +13,8 @@
 \newcommand{\ch}{\emph{\textsc{\textbf{Ch}}}}
 \newcommand{\guno}{\emph{\textbf{G1}}}
 \newcommand{\lvi}{\emph{\textsc{\textbf{LVi}}}}
+%Other macros.
+\Xlemmaseparator{:}
 %
 %
 \begin{document}
@@ -38,7 +40,7 @@
 %
 {\ch} = \emph{\textsc{Obras de D. Lvis de Gongora}} (BNE, RES/45).
 %
-Manuscrito en papel con los textos de Góngora; 26x18cm.; 3 vols.; copiado por Antonio Chacón y supervisadas por el autor, según así lo expresa Chacón en la portada con el texto «Reconocidas i comunicadas con el \textsc{por d. antonio chacon ponce} de Leon»; dedicado a don Gaspar de Guzmán, con la rúbrica «\textsc{al exc.mo señor d. gaspar de gvzman conde de olivares, dvqve de sanlvcar}», fechado en «diziembre 12 de 628»; las págs. 121-137 del vol. 1 contienen el \emph{Polifemo}. <\url{https://bdh-rd.bne.es/viewer.vm?id=0000015414&page=1}>.\par
+Manuscrito en papel con los textos de Góngora; 26x18cm.; 3 vols.; copiado por Antonio Chacón y supervisadas por el autor, según así lo expresa Chacón en la portada con el texto «Reconocidas i comunicadas con el \textsc{por d. antonio chacon ponce} de Leon»; dedicado a don Gaspar de Guzmán, con la rúbrica «\textsc{al exc.mo señor d. gaspar de gvzman conde de olivares, dvqve de sanlvcar}», fechado en «diziembre 12 de 628»; las págs. 121-137 del vol. 1 contienen el \emph{Polifemo}. <\url{https://bdh-rd.bne.es/viewer.vm?id=0000015414\&page=1}>.\par
 %
 {\lvi} = \emph{\textsc{Obras en verso del Homero español}} \emph{que recogio Iuan Lopez de Vicuña}.
 %
@@ -46,7 +48,7 @@ Edición impresa; editio princeps de las obras poéticas de Góngora (?); fecha 
 %
 {\guno} = \emph{Obras de Luis de Góngora} (BNE, MSS/22217).
 %
-Manuscrito en papel con las obras de Góngora; 248 fols.; 21x15cm.; entre 1601 y 1700?; pertenece a la redacción primitiva del texto, que Góngora modificó --probablemente-- por influencia de su amigo Pedro de Valencia, quien analizó su obra en una carta fechada el 30 de junio 1613\footnoteE{Se conservaron dos redacciones autógrafas de esta carta; una, la más antigua, en el MSS/5585 (165r-168v); la segunda \parencite{PérezLópez1988}, en el MSS/3906 (ff. 64r-67r), que tiene su copia en el MSS/19004 (ff. 13r-20r), que apenas modifica las grafías, como la conjunción copulativa escrita con \emph{i} en el autógrafo, cuya copia redacta con \emph{y}. Todos los manuscritos yacen guardados en la Biblioteca Nacional de España. Allí, en esa carta, redacta Pedro de Valencia su crítica a las recientes \emph{Soledades} y \emph{Fábula de Polifemo y Galatea}.}; los ff. 2r-16v contienen el \emph{Polifemo}. <\url{https://bdh-rd.bne.es/viewer.vm?id=0000012206&page=1}>.\par
+Manuscrito en papel con las obras de Góngora; 248 fols.; 21x15cm.; entre 1601 y 1700?; pertenece a la redacción primitiva del texto, que Góngora modificó --probablemente-- por influencia de su amigo Pedro de Valencia, quien analizó su obra en una carta fechada el 30 de junio 1613\footnoteE{Se conservaron dos redacciones autógrafas de esta carta; una, la más antigua, en el MSS/5585 (165r-168v); la segunda \parencite{PérezLópez1988}, en el MSS/3906 (ff. 64r-67r), que tiene su copia en el MSS/19004 (ff. 13r-20r), que apenas modifica las grafías, como la conjunción copulativa escrita con \emph{i} en el autógrafo, cuya copia redacta con \emph{y}. Todos los manuscritos yacen guardados en la Biblioteca Nacional de España. Allí, en esa carta, redacta Pedro de Valencia su crítica a las recientes \emph{Soledades} y \emph{Fábula de Polifemo y Galatea}.}; los ff. 2r-16v contienen el \emph{Polifemo}. <\url{https://bdh-rd.bne.es/viewer.vm?id=0000012206\&page=1}>.\par
 %
 \section*{\textsc{Criterios de edición}}
 \addcontentsline{toc}{section}{\textsc{Criterios de edición}}
@@ -76,11 +78,9 @@ El \comillas{aparato crítico} es negativo. Se reproducen los errores de {\ch} y
 \printbibliography[heading=none]
 \newpage
 %
-\vspace*{-41pt}
-\footnoteA{\textbf{\textsc{Incipit} =} \textsc{fabvla/ de/ Poliphemo/ y/ Galathea} {\ch}; Polifemo {\guno}.}
-\section*{\centering\normalsize [\textsc{Dedicatoria}]\footnoteA{Al Conde/ de Niebla. {\ch}; derigido al conde de Niebla {\guno}.}}
+\section*{\centering\normalsize [\textsc{Dedicatoria}]\footnoteA{\textbf{\textsc{Incipit} =} \textsc{fabvla/ de/ Poliphemo/ y/ Galathea} Ch; Polifemo G1.\hskip11pt Al Conde/ de Niebla. Ch; derigido al conde de Niebla G1.}}
 \addcontentsline{toc}{section}{\emph{\textsc{Dedicatoria}}}
-\vspace{-1em}
+\vspace{-11pt}
 %
 \begin{center}
 	\textbf{[I]}
@@ -124,7 +124,7 @@ tu nombre oirán los términos del mundo.\par\pend
 %
 \section*{\centering\normalsize [\textsc{Fábula}]\footnoteA{Polifemo {\guno}.}}
 \addcontentsline{toc}{section}{\emph{\textsc{Fábula}}}
-\vspace{-1em}
+\vspace{-11pt}
 %
 \begin{center}
 	\textbf{[IV]}
@@ -210,7 +210,7 @@ de la piadosa hierba, encomendada:\\
 \edtext{la serva, a quien leda rugas el heno}{\Afootnote{la delicada selua aquien el heno {\guno}}};\\
 \edtext{la pera, de quien fue cuna dorada}{\Afootnote{rugas la da en la cuna la opilada {\guno}}}\\
 \edtext{la rubia paja; y --pálida tutora--}{\Afootnote{camuesa, del color pierde amarillo {\guno}}}\\
-\edtext{la niega avara, y prodiga la dora}{\Afootnote{en tomando el azero del cuchillo {\guno}}}\footnoteE{77--80 = en el f. 65v del MS/3096 --el autógrafo de la segunda redacción de la carta--, Pedro de Valencia enuncia, respecto a los pasajes, contrastándolos con las \emph{Soledades}: «... i como en casi todo el discurso destas Soledades, alta i grandiosame\emph{n}te con sencilleza i claridad, co\emph{n} breves periodos i los vocablos en sus lugares, i no se vaya co\emph{n} pretension de grandeza i altura a buscar i imitar lo estraño oscuro, ageno, i no tal como lo q\emph{ue} a v. m. le nasce en casa; i no me diga que la camuesa pierde el color amarillo, en tomando el azero del cuchillo...». En el apunte sexto, antes de presentar estas variantes, Pellicer en su \emph{Lecciones solemnes} enuncia: «De la tutela harto los I. C. en algunos M. S. se lee la mitad desta estancia distintamente, y no se si diga mejor, [...] En \emph{modandola}, aludiendo a la enfermedad de la opilación, contraida de comer barro, y de la mucha agua, tan frecuente en las damas de España: para cuyo remedio es vtil la \emph{flor de azero}, o \emph{la escama}, y el andar, como siente \emph{Galeno li. 9. Simpl.} y \emph{Dioscorides lib. 5}, \emph{c. 49.}». La única variante de Pellicer respecto a {\guno} está en \emph{serua}, variante solo gráfica.}.\par\pend
+\edtext{la niega avara, y prodiga la dora}{\Afootnote{en tomando el azero del cuchillo {\guno}}}\footnoteE{\textbf{77--80} = en el f. 65v del MS/3096 --el autógrafo de la segunda redacción de la carta--, Pedro de Valencia enuncia, respecto a los pasajes, contrastándolos con las \emph{Soledades}: «... i como en casi todo el discurso destas Soledades, alta i grandiosame\emph{n}te con sencilleza i claridad, co\emph{n} breves periodos i los vocablos en sus lugares, i no se vaya co\emph{n} pretension de grandeza i altura a buscar i imitar lo estraño oscuro, ageno, i no tal como lo q\emph{ue} a v. m. le nasce en casa; i no me diga que la camuesa pierde el color amarillo, en tomando el azero del cuchillo...». En el apunte sexto, antes de presentar estas variantes, Pellicer en su \emph{Lecciones solemnes} enuncia: «De la tutela harto los I. C. en algunos M. S. se lee la mitad desta estancia distintamente, y no se si diga mejor, [...] En \emph{modandola}, aludiendo a la enfermedad de la opilación, contraida de comer barro, y de la mucha agua, tan frecuente en las damas de España: para cuyo remedio es vtil la \emph{flor de azero}, o \emph{la escama}, y el andar, como siente \emph{Galeno li. 9. Simpl.} y \emph{Dioscorides lib. 5}, \emph{c. 49.}». La única variante de Pellicer respecto a {\guno} está en \emph{serua}, variante solo gráfica.}.\par\pend
 %
 \begin{center}
 	\textbf{[XI]}
@@ -259,9 +259,7 @@ De su frente la perla es, erithrea,\\
 émula vana. El ciego dios se enoja,\\
 y, \edtext{condenado}{\Afootnote{condenando {\guno}}} su esplendor, la deja\\
 pender en oro al nácar de su oreja.\par\pend
-\relax
-\vfill
-\newpage
+\repage
 %
 \begin{center}
 	\textbf{[XV]}
@@ -310,9 +308,7 @@ En carro que estival trillo parece,\\
 a sus compañas Ceres no perdona,\\
 de cuyas siempre fértiles espigas\\
 las provincias de Europa son hormigas.\par\pend
-\relax
-\vfill
-\newpage
+\repage
 %
 \begin{center}
 	\textbf{[XIX]}
@@ -361,9 +357,7 @@ Cébase; y fiero, dexa humedecido\\
 en sangre de una lo que la otra pace.\\
 ¡Revoca, Amor, los silbos, o a su dueño\\
 \edtext{el silencio del can siga, y el sueño}{\Afootnote{el silençio del can sigan o el sueño {\guno}}}!\par\pend
-\relax
-\vfill
-\newpage
+\repage
 %
 \begin{center}
 	\textbf{[XXIII]}
@@ -412,9 +406,7 @@ en breve corcho, pero bien labrado,\\
 un rubio hijo de una encina hueca,\\
 dulcísimo panal, a cuya cera\\
 su néctar vinculó la primavera.\par\pend
-\relax
-\vfill
-\newpage
+\repage
 %
 \begin{center}
 	\textbf{[XXVII]}
@@ -463,6 +455,7 @@ El niño dios, entonces, de la venda,\\
 ostentación gloriosa, alto trofeo\\
 quiere que al árbol de su madre sea\\
 el desdén hasta allí de Galathea.\par\pend
+\repage
 %
 \begin{center}
 	\textbf{[XXXI]}
@@ -606,9 +599,7 @@ Quantas produce Papho, engendra Gnido,\\
 negras vïolas, blancas alhelíes,\\
 llueven sobre el que Amor quiere que sea\\
 tálamo de Acis ya y de Galathea.\par\pend
-\relax
-\vfill
-\newpage
+\repage
 %
 \begin{center}
 	\textbf{[XLIII]}
@@ -800,9 +791,7 @@ De aquel la mano, de ésta el hombro agrava;\\
 convencida la madre, imita al hijo:\\
 serás a un tiempo en estos horizontes\\
 Venus del mar, Cupido de los montes.»\par\pend
-\relax
-\vfill
-\newpage
+\repage
 %
 \begin{center}
 	\textbf{[LIX]}
@@ -851,6 +840,7 @@ Con lágrimas la nimpha solicita\\
 las deidades del mar, que Acis invoca:\\
 concurren todas, y el peñasco duro\\
 la sangre que exprimió, cristal fue puro.\par\pend
+\repage
 %
 \begin{center}
 	\textbf{[LXIII]}
@@ -863,7 +853,5 @@ calçó el líquido aljófar de sus venas.\\
 lamiendo flores y argentando arenas,\\
 a Doris llega, que, con llanto pío,\\
 yerno lo saludó, lo aclamó río.\par\pend
-\endnumbering
-\relax
-\vfill
+\enpage
 \end{document}
