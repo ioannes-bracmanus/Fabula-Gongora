@@ -1,13 +1,13 @@
 \documentclass[11pt,twoside]{article}
 \usepackage{fontspec}
-\usepackage[paperwidth=17.00cm,paperheight=25.00cm,top=1.65cm,inner=2.20cm,outer=1.65cm,bottom=2.50cm]{geometry}
+\usepackage[paperwidth=17.50cm,paperheight=25.00cm,top=2.20cm,inner=2.20cm,outer=1.65cm,bottom=1.95cm]{geometry}
 \usepackage{polyglossia}
 \usepackage{editio-critica}
 \title{\huge\textbf{FÁBULA DE POLIFEMO Y GALATEA}}
 \author{\huge\textsc{\textbf{Luis de Góngora}}}
 \date{\vspace{60pt}\textsc{Con variantes de la redacción primitiva}\\\fontsize{40}{11}\selectfont{\vfill\textbf{\LaTeX}}}
 %
-\setmainfont{TemporaNR}[RawFeature=lnum]
+\setmainfont{Alt Standard}[RawFeature=lnum]
 \setdefaultlanguage{spanish}
 %CONSPECTVS SIGLORVM.
 \newcommand{\ch}{\emph{\textsc{\textbf{Ch}}}}
@@ -15,6 +15,8 @@
 \newcommand{\lvi}{\emph{\textsc{\textbf{LVi}}}}
 %Other macros.
 \Xlemmaseparator{:}
+%
+\newcommand{\head}[1]{\def\mihead{#1}\thispagestyle{empty}} \def\mihead{} \newpagestyle{editio}{\sethead[\thepage][\ifx\mihead\empty\else\mihead\fi][]{}{\ifx\mihead\empty\else\mihead\fi}{\thepage}} \pagestyle{editio}
 %
 %
 \begin{document}
@@ -26,7 +28,7 @@
 \null
 \vfill
 \begin{flushright}
-	Edición y composición en XeLaTeX con el paquete Re-\\ledmac de \textsc{Maïaeul Rouquette} por \textsc{Ioannes Bracledes}.
+	Edición y composición en XeLaTeX con el paquete\\ Reledmac de \textsc{Maïaeul Rouquette} por \textsc{Ioannes Bracledus}.
 \end{flushright}
 \newpage
 %
@@ -78,12 +80,13 @@ El \comillas{aparato crítico} es negativo. Se reproducen los errores de {\ch} y
 \printbibliography[heading=none]
 \newpage
 %
-\section*{\centering\normalsize [\textsc{Dedicatoria}]\footnoteA{\textbf{\textsc{Incipit} =} \textsc{fabvla/ de/ Poliphemo/ y/ Galathea} Ch; Polifemo G1.\hskip11pt Al Conde/ de Niebla. Ch; derigido al conde de Niebla G1.}}
+\head{\emph{\textsc{Fábula de Polifemo y Galatea}}}
+\section*{\centering\normalsize \textsc{Dedicatoria}\footnoteA{\textbf{\textsc{Incipit} =} \textsc{fabvla/ de/ Poliphemo/ y/ Galathea} \ch; Polifemo \guno.\hskip11pt \textbf{Dedicatoria =} Al Conde/ de Niebla. \ch; derigido al conde de Niebla \guno.}}
 \addcontentsline{toc}{section}{\emph{\textsc{Dedicatoria}}}
 \vspace{-11pt}
 %
 \begin{center}
-	\textbf{[I]}
+	\textbf{I}
 \end{center}
 \beginnumbering
 \pstart
@@ -97,7 +100,7 @@ si ya los muros no te ven, de Huelva,\\
 peinar el \edtext{viento}{\Afootnote{monte \emph{corr.} {\guno}}}, fatigar la selva.\par\pend
 %
 \begin{center}
-	\textbf{[II]}
+	\textbf{II}
 \end{center}
 \pstart
 Templado, pula en la maestra mano\\
@@ -110,7 +113,7 @@ gima el lebrel en el cordón de seda.\\
 Y al cuerno, al fin, la cítara suceda.\par\pend
 %
 \begin{center}
-	\textbf{[III]}
+	\textbf{III}
 \end{center}
 \pstart
 Treguas al exercicio sean robusto,\\
@@ -122,12 +125,12 @@ que si la mía puede ofrecer tanto,\\
 clarín (y de la Fama no segundo),\\
 tu nombre oirán los términos del mundo.\par\pend
 %
-\section*{\centering\normalsize [\textsc{Fábula}]\footnoteA{Polifemo {\guno}.}}
+\section*{\centering\normalsize \textsc{Fábula}}
 \addcontentsline{toc}{section}{\emph{\textsc{Fábula}}}
 \vspace{-11pt}
 %
 \begin{center}
-	\textbf{[IV]}
+	\textbf{IV}\footnoteA{\textbf{IV} Polifemo {\guno}.}
 \end{center}
 \pstart
 Donde espumoso el mar sicilïano\\
@@ -140,7 +143,7 @@ del duro oficio da. Allí una alta roca\\
 mordaça es a una gruta de su boca.\par\pend
 %
 \begin{center}
-	\textbf{[V]}
+	\textbf{V}
 \end{center}
 \pstart
 Guarnición tosca de este escollo duro\\
@@ -153,7 +156,7 @@ infame turba de nocturnas aves,\\
 gimiendo tristes y volando graves.\par\pend
 %
 \begin{center}
-	\textbf{[VI]}
+	\textbf{VI}
 \end{center}\pstart
 De este, pues, formidable de la tierra\\
 bosteço, el melancólico vacío\\
@@ -165,7 +168,7 @@ de los montes, esconde: copia bella,\\
 que un silbo junta y un peñasco sella.\par\pend
 %
 \begin{center}
-	\textbf{[VII]}
+	\textbf{VII}
 \end{center}\pstart
 Un monte era de miembros eminente\\
 este (que, de Neptuno hijo fiero,\\
@@ -177,7 +180,7 @@ y al grave peso junco tan delgado,\\
 que un día era bastón y otro cayado.\par\pend
 %
 \begin{center}
-	\textbf{[VIII]}
+	\textbf{VIII}
 \end{center}\pstart
 Negro el cabello, imitador undoso\\
 de las obscuras aguas del Leteo,\\
@@ -189,7 +192,7 @@ su pecho inunda, o tarde, o mal, o en vano\\
 surcada aun de los dedos de su mano.\par\pend
 %
 \begin{center}
-	\textbf{[IX]}
+	\textbf{IX}
 \end{center}\pstart
 No a la Trinacria en sus montañas, fiera\\
 armó de crüeldad, calzó de viento,\\
@@ -201,7 +204,7 @@ los bueyes a su albergue reducía,\\
 pisando la dudosa luz del día.\par\pend
 %
 \begin{center}
-	\textbf{[X]}
+	\textbf{X}
 \end{center}\pstart
 Cercado es (quanto más capaz, mas lleno)\\
 de la fruta el zurrón, casi abortada,\\
@@ -214,7 +217,7 @@ de la piadosa hierba, encomendada:\\
 \repage
 %
 \begin{center}
-	\textbf{[XI]}
+	\textbf{XI}
 \end{center}\pstart
 Erizo es el zurrón, de la castaña,\\
 y (entre el membrillo o verde o datilado)\\
@@ -226,7 +229,7 @@ el tributo, alimento, aunque grosero,\\
 del \edtext{mejor}{\Afootnote{primer {\guno}}} mundo, del candor primero.\par\pend
 %
 \begin{center}
-	\textbf{[XII]}
+	\textbf{XII}
 \end{center}\pstart
 Cera y cáñamo unió (que no debiera)\\
 cient cañas, cuyo bárbaro rüido,\\
@@ -238,7 +241,7 @@ sordo huye el baxel a vela y remo:\\
 ¡tal la música es de Poliphemo!\par\pend
 %
 \begin{center}
-	\textbf{[XIII]}
+	\textbf{XIII}
 \end{center}\pstart
 Nimpha, de Doris hija, la más bella\\
 adora, que vio el reino de la espuma.\\
@@ -250,7 +253,7 @@ si roca de cristal no es de Neptuno,\\
 pavón de Venus es, cisne de Juno.\par\pend 
 %
 \begin{center}
-	\textbf{[XIV]}
+	\textbf{XIV}
 \end{center}\pstart
 Purpureas \edtext{rosas}{\Afootnote{ojas {\guno}}} sobre Galathea\\
 la Alba entre lilios cándidos deshoja:\\
@@ -263,7 +266,7 @@ pender en oro al nácar de su oreja.\par\pend
 \repage
 %
 \begin{center}
-	\textbf{[XV]}
+	\textbf{XV}
 \end{center}\pstart
 Invidia de las nimphas y cuidado\\
 de quantas \edtext{honra el mar}{\Afootnote{honra el amor {\guno}}} deidades era;\\
@@ -275,7 +278,7 @@ inducir a pisar la bella ingrata,\\
 en carro de cristal, campos de plata.\par\pend
 %
 \begin{center}
-	\textbf{[XVI]}
+	\textbf{XVI}
 \end{center}\pstart
 Marino joven, las cerúleas sienes,\\
 del más tierno coral ciñe Palemo,\\
@@ -287,7 +290,7 @@ de la que, aún no le oyó, y, calzaba plumas,\\
 tantas flores pisó como él espumas.\par\pend
 %
 \begin{center}
-	\textbf{[XVII]}
+	\textbf{XVII}
 \end{center}\pstart
 Huye la nimpha bella; y el marino\\
 amante nadador, ser bien quisiera,\\
@@ -299,7 +302,7 @@ que el desdén solicita? ¡Oh quánto yerra\\
 delfín, que sigue en agua corza en tierra!\par\pend
 %
 \begin{center}
-	\textbf{[XVIII]}
+	\textbf{XVIII}
 \end{center}\pstart
 Sicilia, en quanto oculta, en quanto ofrece,\\
 copa es de Baccho, huerto de Pomona:\\
@@ -312,7 +315,7 @@ las provincias de Europa son hormigas.\par\pend
 \repage
 %
 \begin{center}
-	\textbf{[XIX]}
+	\textbf{XIX}
 \end{center}\pstart
 A \edtext{Pales}{\Afootnote{Palas {\guno}}}\footnoteE{Pales, divinidad del ganado. {\guno} lee «Palas» por Palas Atenea, que pudo ser un error del copista al leer --probablemente-- \emph{a} por \emph{e}, o, quizá, es una lección que perteneció enteramente al texto primitivo.} su viciosa cumbre debe\\
 lo que a Ceres, y aún más, su vega llana;\\
@@ -324,7 +327,7 @@ bien sea religión, bien amor sea,\\
 deidad, aunque sin templo, es Galathea.\par\pend
 %
 \begin{center}
-	\textbf{[XX]}
+	\textbf{XX}
 \end{center}\pstart
 Sin aras, no: que el margen donde para\\
 del espumoso mar su pie ligero,\\
@@ -336,7 +339,7 @@ sobre la mimbre que texió, prolixa,\\
 si artificiosa no, su honesta hija.\par\pend
 %
 \begin{center}
-	\textbf{[XXI]}
+	\textbf{XXI}
 \end{center}\pstart
 Arde la juventud, y los arados\\
 peinan las tierras que surcaron antes,\\
@@ -348,7 +351,7 @@ de las hondas, si, en vez del pastor pobre,\\
 el zéfiro no silva, o cruxe el robre.\par\pend
 %
 \begin{center}
-	\textbf{[XXII]}
+	\textbf{XXII}
 \end{center}\pstart
 Mudo la noche el can, el día, dormido,\\
 de cerro en cerro y sombra en sombra yace.\\
@@ -358,10 +361,9 @@ Cébase; y fiero, dexa humedecido\\
 en sangre de una lo que la otra pace.\\
 ¡Revoca, Amor, los silbos, o a su dueño\\
 \edtext{el silencio del can siga, y el sueño}{\Afootnote{el silençio del can sigan o el sueño {\guno}}}!\par\pend
-\repage
 %
 \begin{center}
-	\textbf{[XXIII]}
+	\textbf{XXIII}
 \end{center}\pstart
 La fugitiva nimpha, en tanto, donde\\
 hurta un laurel su tronco al sol ardiente,\\
@@ -373,7 +375,7 @@ al sueño da sus ojos la armonía,\\
 por no abrasar con tres soles al día.\par\pend
 %
 \begin{center}
-	\textbf{[XXIV]}
+	\textbf{XXIV}
 \end{center}\pstart
 Salamandria del sol, vestido estrellas,\\
 latiendo el Can del cielo estaba, quando\\
@@ -385,7 +387,7 @@ su boca dio, y sus ojos quanto pudo,\\
 al sonoro cristal, al cristal mudo.\par\pend
 %
 \begin{center}
-	\textbf{[XXV]}
+	\textbf{XXV}
 \end{center}\pstart
 Era Acis un venablo de Cupido,\\
 de un fauno, medio hombre, medio fiera,\\
@@ -397,7 +399,7 @@ rico de quanto el huerto ofrece pobre,\\
 rinden las bacas y fomenta el robre.\par\pend
 %
 \begin{center}
-	\textbf{[XXVI]}
+	\textbf{XXVI}
 \end{center}\pstart
 El celestial humor recién quaxado,\\
 que la almendra guardó entre verde y seca,\\
@@ -407,10 +409,9 @@ en breve corcho, pero bien labrado,\\
 un rubio hijo de una encina hueca,\\
 dulcísimo panal, a cuya cera\\
 su néctar vinculó la primavera.\par\pend
-\repage
 %
 \begin{center}
-	\textbf{[XXVII]}
+	\textbf{XXVII}
 \end{center}\pstart
 Caluroso, al ar[r]oyo da las manos,\\
 y con ellas las ondas a su frente,\\
@@ -422,7 +423,7 @@ a la (de viento quando no sea) cama\\
 de frescas sombras, de menuda grama.\par\pend
 %
 \begin{center}
-	\textbf{[XXVIII]}
+	\textbf{XXVIII}
 \end{center}\pstart
 La nimpha, pues, la sonorosa plata\\
 bullir sintió del arroyuelo apenas,\\
@@ -434,7 +435,7 @@ que a la precisa fuga, al presto vuelo,\\
 grillos de nieve fue, plumas de hielo.\par\pend
 %
 \begin{center}
-	\textbf{[XXIX]}
+	\textbf{XXIX}
 \end{center}\pstart
 Fruta en mimbres halló, leche exprimida\\
 en juncos, miel en corcho, mas sin dueño;\\
@@ -444,9 +445,10 @@ A la ausencia mil veces ofrecida,\\
 este de cortesía no pequeño\\
 indicio la dexó --aunque \edtext{estatua}{\Afootnote{estaua {\guno}}} helada--\\
 más discursiva y menos alterada.\par\pend
+\repage
 %
 \begin{center}
-	\textbf{[XXX]}
+	\textbf{XXX}
 \end{center}\pstart
 No al cíclope atribuye, no, la ofrenda:\\
 no a sátiro lascivo, ni a otro feo\\
@@ -456,10 +458,9 @@ El niño dios, entonces, de la venda,\\
 ostentación gloriosa, alto trofeo\\
 quiere que al árbol de su madre sea\\
 el desdén hasta allí de Galathea.\par\pend
-\repage
 %
 \begin{center}
-	\textbf{[XXXI]}
+	\textbf{XXXI}
 \end{center}\pstart
 Entre las ramas del que más se lava\\
 en el arroyo, mirto levantado,\\
@@ -471,7 +472,7 @@ y aun siente que a su dueño sea, devoto,\\
 confuso alcaide más, el verde soto.\par\pend
 %
 \begin{center}
-	\textbf{[XXXII]}
+	\textbf{XXXII}
 \end{center}\pstart
 Llamáralo, aunque muda, mas no sabe\\
 el nombre articular, que más querría;\\
@@ -483,7 +484,7 @@ cama de campo y campo de batalla,\\
 fingiendo sueño al canto garzón halla.\par\pend
 %
 \begin{center}
-	\textbf{[XXXIII]}
+	\textbf{XXXIII}
 \end{center}\pstart
 El bulto vio, y, haciéndolo dormido,\\
 librada en un pie toda sobre él pende\\
@@ -495,7 +496,7 @@ corona immóvil, \edtext{mientras}{\Afootnote{quando no {\guno}}} no desciende\\
 que la eminencia abriga de un escollo,\par\pend
 %
 \begin{center}
-	\textbf{[XXXIV]}
+	\textbf{XXXIV}
 \end{center}\pstart
 como la nimpha bella, compitiendo\\
 con el garçón dormido en cortesía,\\
@@ -506,7 +507,7 @@ en su imaginación Cupido hecho\\
 con el pincel que le clavó su pecho,\par\pend
 %
 \begin{center}
-	\textbf{[XXXV]}
+	\textbf{XXXV}
 \end{center}\pstart
 de sitio mejorada, atenta mira\\
 en la disposición robusta, aquello\\
@@ -518,7 +519,7 @@ flores su bozo es, cuyas colores,\\
 como duerme la luz, niegan las flores.\par\pend
 %
 \begin{center}
-	\textbf{[XXXVI]}
+	\textbf{XXXVI}
 \end{center}\pstart
 En la rústica greña yace oculto\\
 el áspid, del intonso prado ameno,\\
@@ -530,7 +531,7 @@ bébelo Galathea, y da otro paso\\
 por apurarle la ponzoña al vaso.\par\pend
 %
 \begin{center}
-	\textbf{[XXXVII]}
+	\textbf{XXXVII}
 \end{center}\pstart
 Acis --aún más de aquello \edtext{que piensa}{\Afootnote{que dispensa {\guno}}}\\
 la brúxula del sueño vigilante--,\\
@@ -542,7 +543,7 @@ que en sus palladïones \edtext{Amor}{\Afootnote{amo {\guno}}} ciego,\\
 sin romper muros, introduce fuego.\par\pend 
 %
 \begin{center}
-	\textbf{[XXXVIII]}
+	\textbf{XXXVIII}
 \end{center}\pstart
 El sueño de sus miembros sacudido,\\
 gallardo el joven la persona ostenta,\\
@@ -554,7 +555,7 @@ prevista le turbó o prognosticada:\\
 Galathea lo diga, salteada.\par\pend 
 %
 \begin{center}
-	\textbf{[XXXIX]}
+	\textbf{XXXIX}
 \end{center}\pstart
 Más agradable y menos zahareña,\\
 al mancebo levanta venturoso,\\
@@ -566,7 +567,7 @@ y verdes celosías unas hiedras,\\
 trepando troncos y abrazando piedras.\par\pend
 %
 \begin{center}
-	\textbf{[XL]}
+	\textbf{XL}
 \end{center}\pstart
 Sobre una alfombra, que imitara en vano\\
 el tirio sus matices (si bien \edtext{era}{\Afootnote{ora {\ch}}}\\
@@ -578,7 +579,7 @@ paloma se \edtext{caló}{\Afootnote{callo {\guno}}}, cuyos gemidos\\
 --trompas de Amor-- alteran sus oídos.\par\pend
 %
 \begin{center}
-	\textbf{[XLI]}
+	\textbf{XLI}
 \end{center}\pstart
 El ronco arrullo al joven solicita;\\
 mas, con desvíos Galathea suaves,\\
@@ -590,7 +591,7 @@ que, en tanta gloria, infierno son no breve,\\
 fugitivo cristal, pomos de nieve.\par\pend
 %
 \begin{center}
-	\textbf{[XLII]}
+	\textbf{XLII}
 \end{center}\pstart
 No a las palomas concedió Cupido\\
 juntar de sus dos picos los rubíes,\\
@@ -600,10 +601,9 @@ Quantas produce Papho, engendra Gnido,\\
 negras vïolas, blancas alhelíes,\\
 llueven sobre el que Amor quiere que sea\\
 tálamo de Acis ya y de Galathea.\par\pend
-\repage
 %
 \begin{center}
-	\textbf{[XLIII]}
+	\textbf{XLIII}
 \end{center}\pstart
 Su aliento humo, sus relinchos fuego,\\
 si bien su freno espumas, illustraba\\
@@ -614,7 +614,7 @@ que a la playa, de escollos no desnuda,\\
 linterna es ciega y atalaya muda.\par\pend
 %
 \begin{center}
-	\textbf{[XLIV]}
+	\textbf{XLIV}
 \end{center}\pstart
 \edtext{Arbitro}{\Afootnote{Arbitrios {\guno}}} de montañas y ribera,\\
 aliento dio, en la cumbre de la roca,\\
@@ -626,7 +626,7 @@ que de su nuevo tronco vid lasciva,\\
 muerta de amor, y de temor no viva.\par\pend
 %
 \begin{center}
-	\textbf{[XLV]}
+	\textbf{XLV}
 \end{center}\pstart
 Mas --cristalinos pámpanos sus braços--\\
 amor la implica, si el temor la anuda,\\
@@ -638,7 +638,7 @@ el trueno de la voz fulminó luego:\\
 ¡referidlo, Pïérides, os ruego!\par\pend
 %
 \begin{center}
-	\textbf{[XLVI]}
+	\textbf{XLVI}
 \end{center}\pstart
 «¡Oh bella Galathea, mas süave\\
 que los claveles que tronchó la aurora;\\
@@ -650,7 +650,7 @@ quantas el celestial zaphiro estrellas!\\
 ¡Oh tú, que en dos incluyes las más bellas!\par\pend
 %
 \begin{center}
-	\textbf{[XLVII]}
+	\textbf{XLVII}
 \end{center}\pstart
 »Dexa las ondas, dexa el rubio choro\\
 de las hijas de Tetis, y el mar vea,\\
@@ -662,7 +662,7 @@ cuyo bello contacto puede hacerlas\\
 sin concebir roció, parir perlas.\par\pend
 %
 \begin{center}
-	\textbf{[XLVIII]}
+	\textbf{XLVIII}
 \end{center}\pstart
 »Sorda hija del mar, cuyas orejas\\
 a mis gemidos son rocas al viento:\\
@@ -674,7 +674,7 @@ choros texiendo estés, escucha un día\\
 mi voz, por dulce, quando no por mía.\par\pend
 %
 \begin{center}
-	\textbf{[XLX]}
+	\textbf{XLX}
 \end{center}\pstart
 »Pastor soy, mas tan rico de ganados,\\
 que los valles impido más vacíos,\\
@@ -686,7 +686,7 @@ leche corren y lágrimas; que iguales\\
 en número a mis bienes son mis males.\par\pend
 %
 \begin{center}
-	\textbf{[L]}
+	\textbf{L}
 \end{center}\pstart
 »Sudando néctar, lambicando olores,\\
 senos que ignora aun la golosa cabra,\\
@@ -698,7 +698,7 @@ o los desate el mayo, ámbar distilan\\
 y en ruecas de oros rayos de sol hilan.\par\pend
 %
 \begin{center}
-	\textbf{[LI]}
+	\textbf{LI}
 \end{center}\pstart
 »Del Júpiter soy hijo, de las ondas,\\
 aunque pastor; si tu desdén no espera\\
@@ -710,7 +710,7 @@ qual otro no vio Phebo, más robusto,\\
 del perezoso Volga al Indo adusto.\par\pend
 %
 \begin{center}
-	\textbf{[LII]}
+	\textbf{LII}
 \end{center}\pstart
 »Sentado, a la alta palma no perdona\\
 su dulce fruto mi robusta mano;\\
@@ -722,7 +722,7 @@ y en los cielos, desde esta roca, puedo\\
 escribir mis desdichas con el dedo?\par\pend
 %
 \begin{center}
-	\textbf{[LIII]}
+	\textbf{LIII}
 \end{center}\pstart
 »Marítimo alcïón, roca eminente\\
 sobre sus huevos coronaba, el día\\
@@ -734,7 +734,7 @@ neutra el agua dudaba a quál fe preste,\\
 o al cielo humano, o al cíclope celeste.\par\pend
 %
 \begin{center}
-	\textbf{[LIV]}
+	\textbf{LIV}
 \end{center}\pstart
 »Registra en otras puertas al venado\\
 sus años, su cabeza colmilluda\\
@@ -746,7 +746,7 @@ albergue hoy, por tu causa, al peregrino,\\
 do halló reparo, si perdió camino.\par\pend
 %
 \begin{center}
-	\textbf{[LV]}
+	\textbf{LV}
 \end{center}\pstart
 »En tablas dividida, rica nave\\
 besó la playa miserablemente,\\
@@ -758,7 +758,7 @@ imponiéndole estaba (si no al viento\\
 dulcísimas coyundas) mi instrumento,\par\pend
 %
 \begin{center}
-	\textbf{[LVI]}
+	\textbf{LVI}
 \end{center}\pstart
 »quando entre globos de agua, entregar veo\\
 a las arenas ligurina haya,\\
@@ -770,7 +770,7 @@ lastimoso despojo fue dos días\\
 a las que esta montaña engendra harpías.\par\pend
 %
 \begin{center}
-	\textbf{[LVII]}
+	\textbf{LVII}
 \end{center}\pstart
 »Segunda tabla a un ginovés mi gruta\\
 de su persona fue, de su hacienda;\\
@@ -780,9 +780,10 @@ Luciente paga de la mejor fruta\\
 que en yerbas se recline, o en hilos penda,\\
 colmillo fue del animal que el Ganges\\
 sufrir muros le vio, romper phalanges:\par\pend
+\repage
 %
 \begin{center}
-	\textbf{[LVIII]}
+	\textbf{LVIII}
 \end{center}\pstart
 »arco digno, gentil, bruñida aljaba,\\
 obras ambas de artífice prolixo,\\
@@ -792,10 +793,9 @@ De aquel la mano, de ésta el hombro agrava;\\
 convencida la madre, imita al hijo:\\
 serás a un tiempo en estos horizontes\\
 Venus del mar, Cupido de los montes».\par\pend
-\repage
 %
 \begin{center}
-	\textbf{[LIX]}
+	\textbf{LIX}
 \end{center}\pstart
 Su horrenda voz, no su dolor interno,\\
 cabras aquí le interrumpieron, quantas\\
@@ -807,7 +807,7 @@ y tantas despidió la honda piedras,\\
 que el muro penetraron de las yedras.\par\pend
 %
 \begin{center}
-	\textbf{[LX]}
+	\textbf{LX}
 \end{center}\pstart
 D\emph{e} los nudos, con esto\edtext{}{\Afootnote[nosep]{q\emph{ue} honestos \emph{err.} {\ch}}}, más süaves.\\
 los dulces dos amantes desatados,\\
@@ -819,7 +819,7 @@ de liebres dirimió copia, así, amiga,\\
 que vario sexo unió y un surco abriga.\par\pend
 %
 \begin{center}
-	\textbf{[LXI]}
+	\textbf{LXI}
 \end{center}\pstart
 Viendo el fiero jayán, con paso mudo\\
 correr al mar la fugitiva nieve\\
@@ -831,7 +831,7 @@ tal, antes que la opaca nube rompa,\\
 previene rayo fulminante trompa.\par\pend
 %
 \begin{center}
-	\textbf{[LXII]}
+	\textbf{LXII}
 \end{center}\pstart
 Con vïolencia desgajó infinita,\\
 mayor punta de la excelsa roca,\\
@@ -841,10 +841,9 @@ Con lágrimas la nimpha solicita\\
 las deidades del mar, que Acis invoca:\\
 concurren todas, y el peñasco duro\\
 la sangre que exprimió, cristal fue puro.\par\pend
-\repage
 %
 \begin{center}
-	\textbf{[LXIII]}
+	\textbf{LXIII}
 \end{center}\pstart
 Sus miembros lastimosamente opresos\\
 del escollo fatal fueron apenas,\\
