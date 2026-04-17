@@ -4,7 +4,10 @@
 \RequirePackage{titleps}
 %\newpagestyle{editio}{\setfoot[\thepage][][]{}{}{\thepage}}
 %\newpagestyle{editio}{\sethead[\thepage][][]{}{}{\thepage}}
-%\pagestyle{editio}
+%\newpagestyle{editio}{\sethead[][][\thepage]{\thepage}{}{}}
+\newcommand{\head}[1]{\def\myhead{#1}\thispagestyle{empty}} \def\myhead{}
+\newpagestyle{editio}{\sethead[][\ifx\myhead\empty\else\myhead\fi][\thepage]{\thepage}{\ifx\myhead\empty\else\myhead\fi}{}}
+\pagestyle{editio}
 \RequirePackage{microtype}
 \setlength{\parindent}{0.6cm}
 \sloppy
@@ -14,7 +17,8 @@
 \fnpos{{A}{familiar},{A}{critical},{E}{familiar}}
 \Xnotenumfont{\bfseries}
 \notenumfontX[E]{\bfseries}
-\AtBeginDocument{\Xmaxhnotes{0.66\textheight}\maxhnotesX{1\textheight}}
+\AtBeginDocument{\Xmaxhnotes{0.60\textheight}\Xbeforenotes{1.2em}\maxhnotesX{0.60\textheight}\setcounter{ballast}{50}}
+%\AtBeginDocument{\Xmaxhnotes{0.5\textheight}\maxhnotesX{0.5\textheight}}
 \Xinplaceoflemmaseparator{0em}
 \Xnumberonlyfirstinline
 \Xnonbreakableafternumber
