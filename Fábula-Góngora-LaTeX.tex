@@ -1,8 +1,8 @@
 \documentclass[11pt,twoside]{article}
 \usepackage{fontspec}
-\usepackage[paperwidth=16.50cm,paperheight=23.00cm,top=2.20cm,inner=2.65cm,outer=1.90cm,bottom=2.20cm]{geometry}
-\usepackage[center,info,cam,a4]{crop}
-\crop[cam]
+\usepackage[paperwidth=16.50cm,paperheight=23.00cm,twoside,textwidth=11.5cm,textheight=16.5cm,outer=2.2cm,heightrounded]{geometry}
+%\usepackage[center,info,cam,a4]{crop}
+%\crop[cam]
 \usepackage{polyglossia}
 \usepackage{editionibus-criticis}
 \title{\huge\textbf{FÁBULA DE POLIFEMO Y GALATEA}}
@@ -21,10 +21,12 @@
 \foottype[T]{quad}
 \renewcommand{\thefootT}{}
 \footindent[T]{none}
+\afootnoterule[T,A]{none}
 \linenummargin{outer}
 \nummarginsep{-25pt}{-60pt}
 \thepagelook{downter}
 \renewcommand{\lemmaseparatorA}{\textbf{→}}
+\setlength{\pwidth}{.75\textwidth}
 %
 \begin{document}
 	{\pagenumbering{gobble}
@@ -44,8 +46,8 @@
 %
 \pagenumbering{Roman}
 \setcounter{page}{1}
-\section*{\raggedleft\textsc{Testimonios consultados}}
-\addcontentsline{toc}{section}{\textsc{Testimonios consultados}}
+\section*{\raggedleft\textsc{TESTIMONIOS CONSULTADOS}}
+\addcontentsline{toc}{section}{\textsc{testimonios consultados}}
 %
 \noindent{\ch} = \emph{\textsc{Obras de D. Lvis de Gongora}} (BNE, RES/45).
 %
@@ -59,8 +61,8 @@ Edición impresa; editio princeps de las obras poéticas de Góngora (?); fecha 
 %
 Manuscrito en papel con las obras de Góngora; 248 fols.; 21x15cm.; entre 1601 y 1700?; pertenece a la redacción primitiva del texto, que Góngora modificó --probablemente-- por influencia de su amigo Pedro de Valencia, quien analizó su obra en una carta fechada el 30 de junio 1613\footE{Se conservaron dos redacciones autógrafas de esta carta: una, la más antigua, en el MSS/5585 (165r-168v); la segunda \parencite{PérezLópez1988}, en el MSS/3906 (ff. 64r-67r), que tiene su copia en el MSS/19004 (ff. 13r-20r), que apenas modifica las grafías, como la conjunción copulativa escrita con \emph{i} en el autógrafo, cuya copia redacta con \emph{y}. Los manuscritos yacen guardados en la Biblioteca Nacional de España. La carta contiene críticas de Pedro de Valencia a las recientes \emph{Soledades} y \emph{Fábula de Polifemo y Galatea}.}; los ff. 2r-16v contienen el \emph{Polifemo}. <\url{https://bdh-rd.bne.es/viewer.vm?id=0000012206\&page=1}>.\par
 %
-\section*{\raggedleft\textsc{Criterios de edición}}
-\addcontentsline{toc}{section}{\textsc{Criterios de edición}}
+\section*{\raggedleft\textsc{CRITERIOS DE EDICIÓN}}
+\addcontentsline{toc}{section}{\textsc{criterios de edición}}
 %
 \noindent Se transcribió el texto del Códice Chacón porque contiene la redacción definitiva del texto del \emph{Polifemo} y, además, es el testimonio que la crítica viene trabajando desde \textcite{Fouché-Delbosc1900}. Cuando {\ch} lee erróneamente o sus lecciones parecen ser contrarias al autor, se adoptarán las lecciones de {\lvi} y, si este erra, se adoptarán las de Pellicer. Es necesario destacar que {\ch} tuvo la supervisión del autor y, por tanto, posee carácter de idiógrafo.\par
 %
@@ -79,11 +81,11 @@ Los excesivos leísmos de {\ch} se sustituyen.\par
 %
 Se adopta la puntuación propuesta por la edición de \textcite{Alonso1967}.\par
 %
-El «aparato crítico» es negativo. Se reproducen los errores de {\ch} y, a modo de variantes descartadas, todas las lecciones de {\guno}, la redacción primitiva. Los \emph{lemmata} se colocaron tal cual se editaron para el texto crítico.\par
+El «aparato crítico» es negativo. Se reproducen los errores de {\ch} y, a modo de variantes, las lecciones de {\guno}, la redacción primitiva.\par
 \repage
 %
-\section*{\raggedleft\textsc{Bibliografía}}
-\addcontentsline{toc}{section}{\textsc{Bibliografía}}
+\section*{\raggedleft\textsc{BIBLIOGRAFÍA}}
+\addcontentsline{toc}{section}{\textsc{bibliografía}}
 \nocite{*}
 \printbibliography[heading=none]
 \newpage
@@ -91,7 +93,7 @@ El «aparato crítico» es negativo. Se reproducen los errores de {\ch} y, a mod
 \pagenumbering{arabic}
 \setcounter{page}{1}
 \setmainhead{\emph{\textsc{fábula de Polifemo y Galatea}}}
-\section*{\centering\normalsize \textsc{Dedicatoria}\footT{\textbf{\textsc{Encabezamiento}:} \textsc{fabvla/ de/ Poliphemo/ y/ Galathea} \ch; Polifemo \guno.}\footT{\textbf{\textsc{Dedicatoria}:} Al Conde/ de Niebla. \ch; derigido al conde de Niebla \guno.}}
+\section*{\centering\normalsize \textsc{DEDICATORIA}\footT{\textbf{\textsc{Encabezamiento}:} \textsc{fabvla/ de/ Poliphemo/ y/ Galathea} \ch; Polifemo \guno.}\footT{\textbf{\textsc{Dedicatoria}:} Al Conde/ de Niebla. \ch; derigido al conde de Niebla \guno.}}
 \addcontentsline{toc}{section}{\emph{\textsc{Dedicatoria}}}
 \vspace{-11pt}
 %
@@ -136,7 +138,7 @@ clarín (y de la Fama no segundo),\\
 tu nombre oirán los términos del mundo.\par\poend
 \repage
 %
-\section*{\centering\normalsize \textsc{Fábula}}
+\section*{\centering\normalsize \textsc{\emph{FÁBULA}}}
 \addcontentsline{toc}{section}{\emph{\textsc{Fábula}}}
 \vspace{-11pt}
 %
@@ -319,6 +321,7 @@ mas, ¿quál diente mortal, quál metal fino\\
 la fuga suspender podrá ligera,\\
 que el desdén solicita? ¡Oh quánto yerra\\
 delfín, que sigue en agua corza en tierra!\par\poend
+\repage
 %
 \begin{center}
 	\textbf{XVIII}
@@ -391,6 +394,7 @@ Dulce se quexa, dulce le responde\\
 un ruiseñor a otro, y dulcemente\\
 al sueño da sus ojos la armonía,\\
 por no abrasar con tres soles al día.\par\poend
+\repage
 %
 \begin{center}
 	\textbf{XXIV}
@@ -415,7 +419,6 @@ El bello imán, el ídolo dormido,\\
 que acero sigue, idólatra venera,\\
 rico de quanto el huerto ofrece pobre,\\
 rinden las bacas y fomenta el robre.\par\poend
-\repage
 %
 \begin{center}
 	\textbf{XXVI}
@@ -452,7 +455,6 @@ Huyera; mas tan frío se desata\\
 un temor perezoso por sus venas,\\
 que a la precisa fuga, al presto vuelo,\\
 grillos de nieve fue, plumas de hielo.\par\poend
-\repage
 %
 \begin{center}
 	\textbf{XXIX}
@@ -465,6 +467,7 @@ A la ausencia mil veces ofrecida,\\
 este de cortesía no pequeño\\
 indicio la dexó --aunque \footA{estatua}{estaua {\guno}} helada--\\
 más discursiva y menos alterada.\par\poend
+\repage
 %
 \begin{center}
 	\textbf{XXX}
@@ -501,6 +504,7 @@ Al pie -no tanto ya, del temor, grave-\\
 fía su intento; y, tímida en la umbría\\
 cama de campo y campo de batalla,\\
 fingiendo sueño al canto garzón halla.\par\poend
+\repage
 %
 \begin{center}
 	\textbf{XXXIII}
@@ -536,6 +540,7 @@ Del casi tramontado sol aspira\\
 a los confusos rayos, su cabello;\\
 flores su bozo es, cuyas colores,\\
 como duerme la luz, niegan las flores.\par\poend
+\repage
 %
 \begin{center}
 	\textbf{XXXVI}
@@ -571,7 +576,8 @@ el cothurno besar dorado intenta.\\
 Menos ofende el rayo prevenido,\\
 al marinero, menos la tormenta\\
 prevista le turbó o prognosticada:\\
-Galathea lo diga, salteada.\par\poend 
+Galathea lo diga, salteada.\par\poend
+\repage
 %
 \begin{center}
 	\textbf{XXXIX}
@@ -608,6 +614,7 @@ Entre las ondas y la fruta, imita\\
 Acis al siempre ayuno en penas graves:\\
 que, en tanta gloria, infierno son no breve,\\
 fugitivo cristal, pomos de nieve.\par\poend
+\repage
 %
 \begin{center}
 	\textbf{XLII}
@@ -643,6 +650,7 @@ la nimpha los oyó, y ser más quisiera\\
 breve flor, hierba humilde, y tierra poca,\\
 que de su nuevo tronco vid lasciva,\\
 muerta de amor, y de temor no viva.\par\poend
+\repage
 %
 \begin{center}
 	\textbf{XLV}
@@ -787,7 +795,6 @@ delicias de aquel mundo, ya tropheo\\
 de Scila, que, ostentado en nuestra playa,\\
 lastimoso despojo fue dos días\\
 a las que esta montaña engendra harpías.\par\poend
-\repage
 %
 \begin{center}
 	\textbf{LVII}
