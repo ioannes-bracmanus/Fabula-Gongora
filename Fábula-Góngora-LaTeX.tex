@@ -1,13 +1,12 @@
 \documentclass[11pt,twoside]{article}
 \usepackage{fontspec}
-\usepackage[paperwidth=16.50cm,paperheight=23.00cm,twoside,textwidth=11.5cm,textheight=16.5cm,outer=2.2cm,heightrounded]{geometry}
-%\usepackage[center,info,cam,a4]{crop}
-%\crop[cam]
+\usepackage[paperwidth=16cm,paperheight=23.00cm,twoside,outer=1.8cm,textwidth=11.5cm,textheight=476pt,heightrounded]{geometry}
+\usepackage[center,info,cam,a4]{crop}
 \usepackage{polyglossia}
 \usepackage{editionibus-criticis}
 \title{\huge\textbf{FÁBULA DE POLIFEMO Y GALATEA}}
 \author{\huge\textsc{\textbf{Luis de Góngora}}}
-\date{\vspace{60pt}\textsc{Con variantes de la redacción primitiva}\\\fontsize{60}{11}\selectfont{\vfill\textbf{\texttt{\LaTeX}}}}
+\date{\vspace{60pt}\textsc{con variantes de la redacción primitiva}\\\fontsize{60}{11}\selectfont{\vfill\textbf{\texttt{\LaTeX}}}}
 %
 \setmainfont{Alt Standard}[RawFeature=lnum]
 \setmainlanguage{spanish}
@@ -24,9 +23,15 @@
 \afootnoterule[T,A]{none}
 \linenummargin{outer}
 \nummarginsep{-25pt}{-60pt}
-\thepagelook{downter}
+\thepagelook{downouterrule}
+\flushbottom
 \renewcommand{\lemmaseparatorA}{\textbf{→}}
 \setlength{\pwidth}{.75\textwidth}
+\renewcommand*{\footnoterule}{%
+	\kern -3pt%
+	\hrule width \textwidth height 0.4pt%
+	\kern 2.6pt}%
+%
 %
 \begin{document}
 	{\pagenumbering{gobble}
@@ -37,7 +42,7 @@
 \null
 \vfill
 \begin{flushright}
-	Edición y composición en \texttt{\XeLaTeX} por Ioannes Bracmanus.
+\small	Edición y composición en \texttt{\XeLaTeX} por \textsc{Ioannes Bracmanus}.
 \end{flushright}
 \newpage
 %
@@ -92,7 +97,7 @@ El «aparato crítico» es negativo. Se reproducen los errores de {\ch} y, a mod
 %
 \pagenumbering{arabic}
 \setcounter{page}{1}
-\setmainhead{\emph{\textsc{fábula de Polifemo y Galatea}}}
+\setmainhead{\small\emph{\textsc{FÁBULA DE POLIFEMO Y GALATEA}}}
 \section*{\centering\normalsize \textsc{DEDICATORIA}\footT{\textbf{\textsc{Encabezamiento}:} \textsc{fabvla/ de/ Poliphemo/ y/ Galathea} \ch; Polifemo \guno.}\footT{\textbf{\textsc{Dedicatoria}:} Al Conde/ de Niebla. \ch; derigido al conde de Niebla \guno.}}
 \addcontentsline{toc}{section}{\emph{\textsc{Dedicatoria}}}
 \vspace{-11pt}
