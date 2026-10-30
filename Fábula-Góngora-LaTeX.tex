@@ -4,11 +4,13 @@
 \usepackage[center,info,cam,a4]{crop}
 \usepackage{polyglossia}
 \usepackage{editionibus-criticis}
-\title{\huge\textbf{FÁBULA DE POLIFEMO Y GALATEA}}
-\author{\huge\textsc{\textbf{Luis de Góngora}}}
-\date{\vspace{60pt}\textsc{con variantes de la redacción primitiva}\\\fontsize{60}{11}\selectfont{\vfill\textbf{\texttt{\LaTeX}}}}
+\title{\huge\textbf{\notoserif FÁBULA DE POLIFEMO Y GALATEA}}
+\author{\huge\textsc{\textbf{\notoserif Luis de Góngora}}}
+\date{\vspace{60pt}\textsc{\notoserif con variantes de la redacción primitiva}\\\fontsize{60}{11}\selectfont{\vfill\textbf{\texttt{\LaTeX}}}}
 %
 \setmainfont{Alt Standard}[RawFeature=lnum]
+\newfontfamily{\notoserif}{Noto Serif}
+\newcommand{\fsize}[1]{\fontsize{#1}{1.2#1}\selectfont}
 \setmainlanguage{spanish}
 %CONSPECTVS SIGLORVM.
 \newcommand{\ch}{\emph{\textbf{Ch}}}
@@ -23,7 +25,7 @@
 \afootnoterule[T,A]{none}
 \linenummargin{outer}
 \nummarginsep{-25pt}{-60pt}
-\thepagelook{downouterrule}
+\thepagelook{downouter}
 \flushbottom
 \renewcommand{\lemmaseparatorA}{\textbf{→}}
 \setlength{\pwidth}{.75\textwidth}
@@ -31,6 +33,9 @@
 	\kern -3pt%
 	\hrule width \textwidth height 0.4pt%
 	\kern 2.6pt}%
+%
+\newfontfamily{\liningfont}{Common Serif}[RawFeature={+lnum,-calt}]
+\renewcommand{\ecpageformat}[1]{{\liningfont #1}}
 %
 %
 \begin{document}
@@ -87,13 +92,12 @@ Los excesivos leísmos de {\ch} se sustituyen.\par
 Se adopta la puntuación propuesta por la edición de \textcite{Alonso1967}.\par
 %
 El «aparato crítico» es negativo. Se reproducen los errores de {\ch} y, a modo de variantes, las lecciones de {\guno}, la redacción primitiva.\par
-\repage
 %
 \section*{\raggedleft\textsc{BIBLIOGRAFÍA}}
 \addcontentsline{toc}{section}{\textsc{bibliografía}}
 \nocite{*}
 \printbibliography[heading=none]
-\newpage
+\cleardoublepage
 %
 \pagenumbering{arabic}
 \setcounter{page}{1}
